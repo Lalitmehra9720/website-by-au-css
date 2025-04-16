@@ -27,7 +27,7 @@ const Navbar = () => {
           <a href="#" className="no-underline text-black  text-2xl">Help</a>
         </li>
         <li>
-          <input type="text" placeholder="Search..." className="bg-white rounded h-[30] pl-[5px] outline-none border-none " />
+          <input type="text" placeholder="Search..." className="bg-white rounded h-[30] pl-[5px] outline-none border-none md:bg-black" />
         </li>
       </ul>
       

@@ -10,18 +10,18 @@ const Product = () => {
         toast({type: "success", title: "You have buy the Product"})
     }
   return (
-    <div className='flex flex-col items-center justify-center '>
+    <div id='product' className='flex flex-col items-center justify-center '>
         <div className='py-[10px]'>
             <p className='font-roboto text-lg '>Product</p>
         </div>
-        <div className='grid grid-cols-2 md:grid-cols-3 gap-4 p-2' >
+        <div className='grid grid-cols-1  md:grid-cols-3 gap-4 p-2' >
         {
         assets.map((items,index)=>(
             <div key={index} className='card card-hover w-[300px] m-3  '>
                 <img src={items.product_link} alt="" className='card-image h-[250px]' />
-                <div class=" flex flex-col items-center justify-center card-body p-3">
-        <h2 class="text-[20px]   m-2">{`₹${items.product_price}`}</h2>
-        <p class="text-[30px] font-roboto ">{items.product_name}</p>
+                <div className=" flex flex-col items-center justify-center card-body p-3">
+        <h2 className="text-[20px]   m-2">{`₹${items.product_price}`}</h2>
+        <p className="text-[30px] font-roboto ">{items.product_name}</p>
       </div>
       <div className='flex gap-[50px] items-end justify-center'>
         <button onClick={toaster}  className='w-[8vw] h-[25px] text-sm rounded-full bg-[#ffd814] border-3 cursor-pointer'>Add Cart</button>
